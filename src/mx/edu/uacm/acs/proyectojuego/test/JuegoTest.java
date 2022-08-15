@@ -10,6 +10,7 @@ import static org.junit.Assert.*;
 
 public class JuegoTest {
     @Test
+    //metodo de prueba que imprime una lista de nombres de jugadores
     public void ImprimeNombreArrayJugadores(){
         Juego juego = new Juego();
         Jugador jugador1 = new Jugador();
@@ -29,6 +30,7 @@ public class JuegoTest {
 
     }
     @Test
+    //metodo de prueba que imprime una lista de jugadores por su caracter
     public void ImprimeNombreArraySimbolosYNombres(){
         Juego juego = new Juego();
         Jugador jugador1 = new Jugador();
