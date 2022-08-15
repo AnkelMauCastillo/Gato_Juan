@@ -93,7 +93,7 @@ public class Tablero {
             
         }while(ganador(p1,p2)==false && empate(turno)==false);
 
-        System.out.println(tablero);
+        imprimirTablero();
         //pausa
         Thread.sleep(5000);
 
