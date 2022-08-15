@@ -7,6 +7,7 @@ import static org.junit.Assert.*;
 
 public class JugadorTest {
     @Test
+    //metodo de prueba que imprime el nombre del jugador
     public void imprimeDatosJugador(){
         Jugador jugador = new Jugador("Eduardo");
         jugador.setSimbolo(jugador.assignaCaracter(1));
@@ -18,6 +19,7 @@ public class JugadorTest {
 
 
     @Test
+    //metodo que valida si el caracter esta dentro del intervalo establecido
     public void validaValor(){
         Jugador jugador = new Jugador("Eduardo");
         int contador = 1;
