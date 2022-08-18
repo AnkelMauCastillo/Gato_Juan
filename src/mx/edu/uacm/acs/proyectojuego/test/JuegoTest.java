@@ -31,7 +31,7 @@ public class JuegoTest {
     }
     @Test
     //metodo de prueba que imprime una lista de jugadores por su caracter
-    public void ImprimeNombreArraySimbolosYNombres(){
+    public void ImprimeNombreArraySimbolosYNombres() throws IllegalAccessException {
         Juego juego = new Juego();
         Jugador jugador1 = new Jugador();
         Jugador jugador2 = new Jugador();

@@ -27,7 +27,7 @@ public class Juego {
     
     Scanner entrada=new Scanner(System.in);
 
-    public void menuPrincipal() throws InterruptedException {
+    public void menuPrincipal() throws InterruptedException, IllegalAccessException {
         int opc;
         String nombre="";
         
@@ -57,7 +57,7 @@ public class Juego {
             return simbolo[1]="O";
         }
     }
-    public void Movimientos() throws InterruptedException {
+    public void Movimientos() throws InterruptedException, IllegalAccessException {
         Scanner entrada = new Scanner(System.in);
         int turno=0;
         int posicion;
@@ -81,7 +81,7 @@ public class Juego {
         String nombre = entrada.nextLine();
         return nombre;
     }
-    public ArrayList<Jugador> ImprimeNombreArraySimbolosYNombre(){
+    public ArrayList<Jugador> ImprimeNombreArraySimbolosYNombre() throws IllegalAccessException {
         Juego juego = new Juego();
 
         ArrayList<Jugador> jugadores1 = new ArrayList<>();

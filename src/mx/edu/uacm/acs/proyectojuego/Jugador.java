@@ -36,14 +36,21 @@ public class Jugador {
         return "Jugador:"+ nombre + ", simbolo=" + simbolo;
     }
 
-    public String assignaCaracter(int valorCaracter){
+    public String assignaCaracter(int valorCaracter) throws IllegalAccessException {
         Jugador jugador = new Jugador();
 
-        if (valorCaracter == 1) {
-            return "X";
-        }else if (valorCaracter == 2){
-            return "O";
+        if (valorCaracter < 1  || valorCaracter > 2) {
+            throw new IllegalAccessException("Valores fuera del rango");
+            
+        }else {
+            if (valorCaracter == 1) {
+                return "X";
+            }else if (valorCaracter == 2){
+                return "O";
+            }
         }
+
+
         return null;
     }
 
